@@ -1,12 +1,50 @@
-# React + Vite
+🧱 Masonry Business Website (WIP)
+This is a work-in-progress website for Melvin Masonry, a family-owned masonry business. Built with React, the site features a responsive navigation bar, page transitions, and placeholder content while the design is in development.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚧 Project Status
+Work in Progress
+Currently features a functioning navigation bar, two pages, placeholder images, and some basic CSS hover effects. More functionality and polish coming soon!
 
-Currently, two official plugins are available:
+✨ Features
+Navigation bar with interactive dropdowns
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Simple multi-page routing with React Router
 
-## Expanding the ESLint configuration
+Clean layout and basic mobile responsiveness
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Custom CSS hover effects for user interaction
+
+🧰 Tech Stack
+React (with Vite)
+
+JavaScript
+
+HTML5
+
+CSS3
+
+React Router DOM (for page routing)
+
+🛠️ Getting Started
+To run this project locally:
+
+Clone this repository.
+
+Navigate to the project directory.
+
+Install dependencies:
+npm install
+
+Run the dev server:
+npm run dev
+
+
+📌 Notes
+All images are currently placeholders.
+
+This site is being used to learn and experiment with React and component-based structure.
+
+Functionality and content will evolve as development continues.
+
+👷 Author
+Developed by Ian Childress as a hands-on learning project with real business inspiration.
