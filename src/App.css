@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: block;
+}
+
+#root {
+  width: 100%;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 4em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em hsla(174, 71%, 97%, 0.667));
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;  /* Center align the navbar content */
+  padding: 1rem;
+  background-color: teal;
+}
+
+.navbar {
+  height: 6rem;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;  /* Align nav links horizontally */
+}
+
+.dropdown {
+  position: relative;  /* Required to position dropdown relative to its parent */
+}
+
+#linkTo {
+  color: black;
+  text-decoration: none;  /* Remove underline from links */
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu {
+  display: none;  /* Hide dropdown menu by default */
+  position: absolute;  /* Position relative to parent */
+  top: 100%;  /* Align it directly below the Menu link */
+  left: 0;
+  background-color: teal;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex; /* Show items in a row */
+  gap: 1rem;  /* Space items evenly */
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  color: teal; /* Hover color for links */
+  background-color: #006666; /* Background color on hover */
+}
+
+/* Show dropdown when hovering on the parent */
+.dropdown:hover .dropdown-menu {
+  display: flex;  /* Show dropdown when hovered */
+}
+
+
+
