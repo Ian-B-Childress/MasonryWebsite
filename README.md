@@ -47,4 +47,4 @@ This site is being used to learn and experiment with React and component-based s
 Functionality and content will evolve as development continues.
 
 👷 Author
-Developed by [Your Name] as a hands-on learning project with real business inspiration.
+Developed by Ian Childress as a hands-on learning project with real business inspiration.
