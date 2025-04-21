@@ -2,6 +2,9 @@ body {
   margin: 0;
   height: 100vh;
   display: block;
+  background: #93785B;
+  background: linear-gradient(90deg,rgba(147, 120, 91, 1) 0%, rgba(172, 137, 104, 1) 46%, rgba(134, 93, 54, 1) 100%);
+  color: black;
 }
 
 
@@ -98,7 +101,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: teal;
+  background-color: #865D36;
   color: white;
   width: 6rem;
   height: 3rem;
@@ -106,7 +109,7 @@ ul {
 }
 
 #callToAction:hover {
-  background-color: #006666;
+  background-color: #3E362E;
 }
 
 .homeImage {
@@ -129,5 +132,9 @@ ul {
 }
 
 p.h2p {
-  border-bottom: 2px solid teal;
+  border-bottom: 2px solid #865D36;
+}
+
+img {
+  border-radius: 5px;
 }
