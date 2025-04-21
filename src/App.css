@@ -23,46 +23,45 @@ body {
 nav {
   display: flex;
   justify-content: flex-start;
-  align-items: center;  /* Center align the navbar content */
+  align-items: center; /* Center align the navbar content */
   padding: 1rem;
   background-color: teal;
 }
 
 .navbar {
-  height: 6rem;
+  height: 6%;
   width: 100%;
 }
 
 ul {
   list-style-type: none;
-  display: flex;  /* Align nav links horizontally */
+  display: flex; /* Align nav links horizontally */
 }
 
 .dropdown {
-  position: relative;  /* Required to position dropdown relative to its parent */
+  position: relative; /* Required to position dropdown relative to its parent */
 }
 
 #linkTo {
   color: black;
-  text-decoration: none;  /* Remove underline from links */
+  text-decoration: none; /* Remove underline from links */
   padding: 0.5rem 1rem;
-  
 }
 
 #linkTo:hover {
-  background-color: #006666; 
+  background-color: #006666;
 }
 
 .dropdown-menu {
-  display: none;  /* Hide dropdown menu by default */
-  position: absolute;  /* Position relative to parent */
-  top: 100%;  /* Align it directly below the Menu link */
+  display: none; /* Hide dropdown menu by default */
+  position: absolute; /* Position relative to parent */
+  top: 100%; /* Align it directly below the Menu link */
   left: 0;
   background-color: teal;
   border: 1px solid #ccc;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   display: flex; /* Show items in a row */
-  gap: 1rem;  /* Space items evenly */
+  gap: 1rem; /* Space items evenly */
 }
 
 .dropdown-menu li {
@@ -81,26 +80,36 @@ ul {
 
 /* Show dropdown when hovering on the parent */
 .dropdown:hover .dropdown-menu {
-  display: flex;  /* Show dropdown when hovered */
+  display: flex; /* Show dropdown when hovered */
+}
+
+.h-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1%;
+  max-width: 13%;
+  justify-content: space-evenly;
+  margin: 0 auto;
 }
 
 #callToAction {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: teal;
   color: white;
-  padding: 0.5rem 1rem;
-  justify-content: center;
-  text-align: center; 
-  width: 10%;
-  height: 10%;
-  margin: 3rem;
-  flex-direction: row;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 5px;
 }
 
 #callToAction:hover {
-  background-color: #006666; 
+  background-color: #006666;
 }
 
-
-
-
+.homeImage {
+  width: 45%;
+  height: auto;
+  align-items: center;
+  margin: 0 auto;
+}

@@ -8,23 +8,24 @@ export default function HomeSectionOne() {
   return (
     <>
       <div className="hero">
-        <div className="h-header">
-          <h1>Welcome To Melvin Masonry</h1>
-          {/*add a new div to seperate the call to actions and the header */}
-          <a>
-            <Link to="/projects" id="callToAction">
-             <p id="ctaWork">See Work</p>
-            </Link>
-          </a>
-          <a>
-            <Link to="/contact" id="callToAction">
-              <p id="ctaContact">Contact Us</p>
-            </Link>
-          </a>
-        </div>
-        <div className="h-image">
-         
-        </div>
+        <h1>Welcome To Melvin Masonry</h1>
+      </div>
+      <div className="homeImage">
+        <img src={project1} />
+      </div>
+      <div className="h-header">
+        {/*add a new div to seperate the call to actions and the header */}
+        <a>
+          <Link to="/projects" id="callToAction">
+            <p id="ctaWork">See Work</p>
+          </Link>
+        </a>
+
+        <a>
+          <Link to="/contact" id="callToAction">
+            <p id="ctaContact">Contact Us</p>
+          </Link>
+        </a>
       </div>
     </>
   );
