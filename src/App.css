@@ -3,7 +3,7 @@ body {
   height: 100vh;
   display: block;
   background: #93785B;
-  background: linear-gradient(90deg,rgba(147, 120, 91, 1) 0%, rgba(172, 137, 104, 1) 46%, rgba(134, 93, 54, 1) 100%);
+background: linear-gradient(117deg, rgba(147, 120, 91, 1) 0%, rgba(138, 127, 109, 1) 50%, rgba(134, 93, 54, 1) 100%);
   color: black;
 }
 
@@ -13,7 +13,7 @@ body {
   padding-bottom: 2rem;
   text-align: center;
   background: #93785B;
-  background: linear-gradient(90deg,rgba(147, 120, 91, 1) 0%, rgba(172, 137, 104, 1) 46%, rgba(134, 93, 54, 1) 100%);
+background: linear-gradient(117deg, rgba(147, 120, 91, 1) 0%, rgba(138, 127, 109, 1) 50%, rgba(134, 93, 54, 1) 100%);
 }
 
 .logo {
