@@ -4,10 +4,13 @@ body {
   display: block;
 }
 
+
 #root {
   width: 100%;
   padding-bottom: 2rem;
   text-align: center;
+  background: #93785B;
+  background: linear-gradient(90deg,rgba(147, 120, 91, 1) 0%, rgba(172, 137, 104, 1) 46%, rgba(134, 93, 54, 1) 100%);
 }
 
 .logo {
@@ -25,7 +28,6 @@ nav {
   justify-content: flex-start;
   align-items: center; /* Center align the navbar content */
   padding: 1rem;
-  background-color: teal;
 }
 
 .navbar {
@@ -49,7 +51,7 @@ ul {
 }
 
 #linkTo:hover {
-  background-color: #006666;
+  background-color: #865D36;
 }
 
 .dropdown-menu {
@@ -57,7 +59,7 @@ ul {
   position: absolute; /* Position relative to parent */
   top: 100%; /* Align it directly below the Menu link */
   left: 0;
-  background-color: teal;
+  background-color: #A69080;
   border: 1px solid #ccc;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   display: flex; /* Show items in a row */
@@ -112,4 +114,20 @@ ul {
   height: auto;
   align-items: center;
   margin: 0 auto;
+  padding: 2% 1%;
+  border-radius: 5px;
+}
+
+.h2{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-size: 1.5rem;
+  padding: 2% 2%;
+  justify-content: left;
+  max-width: 35%;
+}
+
+p.h2p {
+  border-bottom: 2px solid teal;
 }
