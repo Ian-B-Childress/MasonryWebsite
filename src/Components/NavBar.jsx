@@ -13,16 +13,16 @@ const NavBar = () => {
       </a>
       <ul className="nav-links">
         <li className="dropdown" onMouseEnter={() => setDropDownVisible(true)} onMouseLeave={() => setDropDownVisible(false)}>
-            <a href='#' id="linkTo">Menu</a>
+  
             {/* CONDITIONAL RENDER basically an 'if' statement*/}
-            {dropDownVisible && (
+           
             <ul className="dropdown-menu">
               <li><Link to="/" id="linkTo">Home</Link></li>
               <li><Link to="/projects" id="linkTo">Projects</Link></li>
               <li><Link to="/about" id="linkTo">About</Link></li>
               <li><Link to="/contact" id="linkTo">Contact</Link></li>
             </ul>
-          )}
+        
         </li>
       </ul>
     </nav>

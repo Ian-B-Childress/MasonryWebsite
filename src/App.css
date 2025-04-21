@@ -1,19 +1,31 @@
+html {
+  background: #93785b;
+  background: linear-gradient(
+    117deg,
+    rgba(147, 120, 91, 1) 0%,
+    rgba(138, 127, 109, 1) 50%,
+    rgba(134, 93, 54, 1) 100%
+  );
+}
+
 body {
   margin: 0;
   height: 100vh;
   display: block;
-  background: #93785B;
-background: linear-gradient(117deg, rgba(147, 120, 91, 1) 0%, rgba(138, 127, 109, 1) 50%, rgba(134, 93, 54, 1) 100%);
   color: black;
 }
-
 
 #root {
   width: 100%;
   padding-bottom: 2rem;
   text-align: center;
-  background: #93785B;
-background: linear-gradient(117deg, rgba(147, 120, 91, 1) 0%, rgba(138, 127, 109, 1) 50%, rgba(134, 93, 54, 1) 100%);
+  background: #93785b;
+  background: linear-gradient(
+    117deg,
+    rgba(147, 120, 91, 1) 0%,
+    rgba(138, 127, 109, 1) 50%,
+    rgba(134, 93, 54, 1) 100%
+  );
 }
 
 .logo {
@@ -23,7 +35,7 @@ background: linear-gradient(117deg, rgba(147, 120, 91, 1) 0%, rgba(138, 127, 109
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em hsla(174, 71%, 97%, 0.667));
+  filter: drop-shadow(0 0 2em hsla(30, 43%, 37%, 1));
 }
 
 nav {
@@ -36,6 +48,11 @@ nav {
 .navbar {
   height: 6%;
   width: 100%;
+  background-color: #e5dfda;
+  border-radius: 20px;
+  width: 65%;
+  max-height: 3rem;
+  margin: 1% auto;
 }
 
 ul {
@@ -54,17 +71,13 @@ ul {
 }
 
 #linkTo:hover {
-  background-color: #865D36;
+  background-color: #865d36;
 }
 
 .dropdown-menu {
   display: none; /* Hide dropdown menu by default */
-  position: absolute; /* Position relative to parent */
-  top: 100%; /* Align it directly below the Menu link */
-  left: 0;
-  background-color: #A69080;
-  border: 1px solid #ccc;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* Position relative to parent */
+  text-decoration: solid underline;
   display: flex; /* Show items in a row */
   gap: 1rem; /* Space items evenly */
 }
@@ -76,11 +89,12 @@ ul {
 .dropdown-menu a {
   color: black;
   text-decoration: none;
+  max-width: 15%;
 }
 
 .dropdown-menu a:hover {
   color: teal; /* Hover color for links */
-  background-color: #006666; /* Background color on hover */
+  border-radius: 10px;
 }
 
 /* Show dropdown when hovering on the parent */
@@ -90,51 +104,80 @@ ul {
 
 .h-header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1%;
-  max-width: 13%;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+  max-width: 40%;
+  height: auto;
   justify-content: space-evenly;
+  text-align: center;
   margin: 0 auto;
+  margin-right: 10%;
+  background-color: rgba(229, 223, 218, 0.9);
+  border-radius: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 #callToAction {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #865D36;
+  background-color: #865d36;
   color: white;
   width: 6rem;
   height: 3rem;
   border-radius: 5px;
+  margin: 1.5%;
 }
 
 #callToAction:hover {
-  background-color: #3E362E;
+  background-color: #3e362e;
 }
 
-.homeImage {
-  width: 45%;
-  height: auto;
-  align-items: center;
-  margin: 0 auto;
-  padding: 2% 1%;
-  border-radius: 5px;
-}
-
-.h2{
+.homeContainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  font-size: 1.5rem;
-  padding: 2% 2%;
-  justify-content: left;
-  max-width: 35%;
+  grid-template-rows: 20% 20% 1fr;
+  background-image: url("images/placeholder.WebP");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 20px;
+  align-items: center;
 }
 
 p.h2p {
-  border-bottom: 2px solid #865D36;
+  font-size: 1.1rem;
+  margin: 0;
+  color: #3e362e;
+}
+
+.h2{
+  justify-content: left;
+  text-align: left;
 }
 
 img {
   border-radius: 5px;
+}
+
+.welcome  {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+br {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 30%;
 }

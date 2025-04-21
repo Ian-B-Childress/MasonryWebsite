@@ -3,29 +3,38 @@ import Home from "../pages/Home";
 import "../App.css";
 import project1 from "../images/project1.jpg";
 import { Link } from "react-router-dom";
+import placeholder from "../images/placeholder.WebP";
 
 export default function HomeSectionOne() {
   return (
     <>
-      <div className="hero">
-        <h1>Welcome To Melvin Masonry</h1>
-      </div>
-      <div className="homeImage">
-        <img src={project1} />
-      </div>
-      <div className="h-header">
-        {/*add a new div to seperate the call to actions and the header */}
-        <a>
-          <Link to="/projects" id="callToAction">
-            <p id="ctaWork">See Work</p>
-          </Link>
-        </a>
+      <div className="homeContainer">
+        <div className="hero">
+          <h1></h1>
+        </div>
 
-        <a>
-          <Link to="/contact" id="callToAction">
-            <p id="ctaContact">Contact Us</p>
-          </Link>
-        </a>
+        <div>
+          <p></p>
+        </div>
+
+        <div className="h-header">
+          {/*add a new div to seperate the call to actions and the header */}
+          <p className="welcome">Welcome To Melvin Masonry</p>
+          <p className="h2p">
+            With 58+ years of business we ensure all of your masonry needs are
+            met with our highest quality craftsmanship.
+          </p>
+
+          <div className="button-container">
+            <Link to="/projects" id="callToAction">
+              <p id="ctaWork">See Work</p>
+            </Link>
+
+            <Link to="/contact" id="callToAction">
+              <p id="ctaContact">Contact Us</p>
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -13,14 +13,13 @@ function Home() {
       </div>
       <div className="home">
         <HomeContent></HomeContent>
-        <div className="h2">
-          <h2>Brick, Block, Or Stone, We Can Do It All!</h2>
-          <p className="h2p">
-            With 58+ years of business we ensure all of your masonry needs are
-            met with our highest quality craftsman-ship.
-          </p>
-        </div>
       </div>
+      <br>
+      
+      </br>
+      <div className="h2">
+          <h2>Brick, Block, Or Stone, We Can Do It All!</h2> 
+        </div>
     </>
   );
 }
