@@ -12,7 +12,7 @@ body {
   margin: 0;
   height: 100vh;
   display: block;
-  color: black;
+  color: #3e362e;
 }
 
 #root {
@@ -175,9 +175,93 @@ img {
   font-weight: bold;
 }
 
-br {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 30%;
+/* setting up the animation for home image and header */
+@keyframes swooshIn {
+  0% {
+    transform: translateX(+100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes swooshOut {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.home {
+  animation: swooshIn 1s ease-out forwards;
+  opacity: 0; 
+}
+
+.h-header {
+  animation: swooshOut 1.5s ease-in forwards;
+  opacity: 0; 
+}
+
+.aboutUsContainer {
+  display: flex;
+  padding-top: 10%;
+  margin-left: 0;
+  justify-content: space-evenly;
+ 
+}
+
+.aboutTheCompany {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #e5dfda;
+  border-radius: 20px;
+  width: 30%;
+  border: solid 3px #5f3e24;
+}
+
+.aboutTheCompany p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.aboutUsImg img {
+  border: solid 3px #5f3e24;
+  border-radius: 20px;
+}
+
+
+.coreValuesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem;
+}
+
+.coreValues ul{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+  list-style-type:square;
+  background-color: #e5dfda;
+  border-radius: 20px;
+}
+
+.coreValues h1 {
+  background-color: #e5dfda;
+  border: solid 3px #5f3e24;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 1rem;
+  margin: 0 auto;
 }
