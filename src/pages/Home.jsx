@@ -4,6 +4,7 @@ import App from "../App.jsx";
 import React from "react";
 import HomeContent from "../Components/HomeContent.jsx";
 import NavBar from "../Components/NavBar.jsx";
+import AboutUs from "../Components/AboutUs.jsx";
 
 function Home() {
   return (
@@ -14,12 +15,10 @@ function Home() {
       <div className="home">
         <HomeContent></HomeContent>
       </div>
-      <br>
-      
-      </br>
-      <div className="h2">
-          <h2>Brick, Block, Or Stone, We Can Do It All!</h2> 
-        </div>
+      <br></br>
+      <div className="HomeAboutUs">
+        <AboutUs></AboutUs>
+      </div>
     </>
   );
 }
