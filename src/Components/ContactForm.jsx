@@ -7,6 +7,7 @@ import { Component } from "react";
 class ContactForm extends Component {
   //initialize the state
   constructor(props) {
+    super(props);
     this.state = {
       name: "",
       phone: "",
