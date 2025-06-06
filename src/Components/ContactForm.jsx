@@ -1,26 +1,70 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Component } from "react";
 
+//lets write a controlled component for the contact form
+//name our class
+class ContactForm extends Component {
+  //initialize the state
+  constructor(props) {
+    this.state = {
+      name: "",
+      phone: "",
+      message: "",
+    };
 
-export default function ContactForm() {
-  return (
-    <div className="ContactContainer">
-      <div className="form">
-        <form>
-            <label>
-                Name:
-                <input type="text" name="name" required />
-            </label>
-            <label>
-                Email:
-                <input type="email" name="email" required />
-            </label>
-            <label>
-                Message:
-                <textarea name="message" required></textarea>
-            </label>
-        </form>
-      </div>
-    </div>
-  );
+    //handleChange updates the state each time it changes
+    this.handleChange = this.handleChange.bind(this);
+    //handleSubmit will be used to submit the updated state
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+    //handleChange will update the state of the name, phone, and message fields
+  handleChange(event) {
+    this.setState({
+      [event.target.name]: event.target.value,
+    });
+  }
+  handleSubmit(event) {
+    event.preventDefault();
+    console.log("Form submitted:", this.state);
+  }
+
+  //now we render the form
+  //we will use the state to set the value of the input fields
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input
+            type="text"
+            name="name"
+            value={this.state.name}
+            onChange={this.handleChange}
+            required
+          />
+        </label>
+        <label>
+          Phone Number:
+          <input
+            type="tel"
+            name="phone"
+            value={this.state.phone}
+            onChange={this.handleChange}
+            required
+          />
+        </label>
+        <label>
+          Message:
+          <textarea
+            name="message"
+            value={this.state.message}
+            onChange={this.handleChange}
+            required
+          ></textarea>
+        </label>
+      </form>
+    );
+  }
 }
+export default ContactForm;
