@@ -5,6 +5,7 @@ import React from "react";
 import HomeContent from "../Components/HomeContent.jsx";
 import NavBar from "../Components/NavBar.jsx";
 import AboutUs from "../Components/AboutUs.jsx";
+import Gallery from "../Components/Gallery.jsx";
 
 function Home() {
   return (
@@ -19,6 +20,9 @@ function Home() {
       <div className="HomeAboutUs">
         <AboutUs></AboutUs>
       </div>
+      <div className="HomeGallery">
+        <Gallery></Gallery>
+        </div>
     </>
   );
 }
