@@ -3,6 +3,7 @@ import "../App.css";
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import brickpath from "../images/brickpath.jpg";
+import fireplace from "../images/fireplace.png";
 
 function Gallery() {
   return (
@@ -15,22 +16,22 @@ function Gallery() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="cc">
-            <img className="CommercialImg" src={brickpath} text="Commercial" />
-            <Carousel.Caption>
+          <img className="CommercialImg" src={brickpath} text="Commercial" />
+          <Carousel.Caption>
             <h3>Commercial</h3>
-            </Carousel.Caption>
-             </Carousel.Item>
+          </Carousel.Caption>
+        </Carousel.Item>
         <Carousel.Item className="ic">
-            <img className="Interior" src={brickpath} text="Interior" />
-            <Carousel.Caption>
+          <img className="Interior" src={fireplace} text="Interior" />
+          <Carousel.Caption>
             <h3>Interior</h3>
-            </Carousel.Caption>
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="ec">
-            <img className="Exterior" src={brickpath} text="Exterior" />
-            <Carousel.Caption>  
+          <img className="Exterior" src={brickpath} text="Exterior" />
+          <Carousel.Caption>
             <h3>Exterior</h3>
-            </Carousel.Caption> 
+          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     </section>
