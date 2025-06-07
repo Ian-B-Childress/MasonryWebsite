@@ -34,6 +34,7 @@ class ContactForm extends Component {
   //we will use the state to set the value of the input fields
   render() {
     return (
+      <>
       <form onSubmit={this.handleSubmit}>
         <label>
           Name:
@@ -65,6 +66,16 @@ class ContactForm extends Component {
           ></textarea>
         </label>
       </form>
+
+      <div>
+      
+        <button type = "submit" onClick={this.handleSubmit}>Submit</button>
+        <Link to="/"><button>Cancel</button></Link>
+      
+      </div>
+      
+      </>
+      
     );
   }
 }
