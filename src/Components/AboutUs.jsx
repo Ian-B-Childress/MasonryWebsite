@@ -24,7 +24,7 @@ export default function AboutUs() {
           <img src={aboutCompanyImg} alt="About Us" />
         </div>
       </div>
-      <div className="coreValuesContainer">
+      {/* <div className="coreValuesContainer">
         <div className="coreValues">
           <h1>Core Values</h1>
           <ul>
@@ -49,7 +49,7 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="locallyOwned"></div>
-      <div className="companyPartners"></div>
+      <div className="companyPartners"></div> */}
     </>
   );
 }

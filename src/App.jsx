@@ -7,7 +7,8 @@ import './App.css'
 import project1 from './images/project1.jpg'
 import ReactDOM from 'react-dom'
 import { createRoot } from 'react-dom/client'
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 function App() {
