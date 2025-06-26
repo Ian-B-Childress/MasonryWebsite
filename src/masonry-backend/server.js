@@ -16,7 +16,7 @@ app.use(cors());
     res.status(200).json({ message: 'Form submitted successfully' });
     });
 
-app.get('/', (req, res) => {
+app.get('/', (res) => {
     res.send('masonry-backend is running');
     });
 
