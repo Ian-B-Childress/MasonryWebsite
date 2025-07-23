@@ -3,7 +3,6 @@ import "../App.css";
 import React from "react";
 import brickpath from "../images/brickpath.jpg";
 import fireplace from "../images/fireplace.png";
-import { Helmet } from "react-helmet";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -15,29 +14,24 @@ function Gallery() {
     <section className="gallery">
      <h1>Services</h1>
     <Carousel
-    showThumbs={false}
+    showThumbs={true}
     showStatus={false}
-    autoPlay={true}
-    infiniteLoop={true}
-    interval={2000}
+    autoPlay={false}
     className="carousel"
+    
     >
       
       <div>
-        <img src={brickpath} alt="Residential" />
-        <p className="legend">Residential</p>
+        <img src={brickpath} alt="Brick" />
+        <p className="legend">Brick</p>
       </div>
       <div>
-        <img src={fireplace} alt="Commercial" />
-        <p className="legend">Commercial</p>
+        <img src={fireplace} alt="Block" />
+        <p className="legend">Block</p>
       </div>
       <div>
-        <img src={brickpath} alt="Interior" />
-        <p className="legend">Interior</p>
-      </div>
-      <div>
-        <img src={fireplace} alt="Exterior" />
-        <p className="legend">Exterior</p>
+        <img src={brickpath} alt="Stone" />
+        <p className="legend">Stone</p>
       </div>
 
     </Carousel>

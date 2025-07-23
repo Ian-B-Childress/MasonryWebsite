@@ -18,7 +18,7 @@ const NavBar = () => {
            
             <ul className="dropdown-menu">
               <li><Link to="/" id="linkTo">Home</Link></li>
-              <li><Link to="/projects" id="linkTo">Projects</Link></li>
+              <li><Link to="/projects" id="linkTo">Services</Link></li>
               <li><Link to="/about" id="linkTo">About</Link></li>
               <li><Link to="/contact" id="linkTo">Contact</Link></li>
             </ul>
