@@ -28,5 +28,6 @@ console.log("Message sent: ", info.messageId);
 })().catch(console.error);
 
 export default function SendEmail() {
+  alert("SendEmail component loaded");
   return <div>SendEmail</div>;
 }
