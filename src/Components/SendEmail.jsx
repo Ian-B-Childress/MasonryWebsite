@@ -3,12 +3,10 @@ import nodemailer from "nodemailer";
 
 const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
+  service: "gmail",
   auth: {
-    user: "ian.childress10@gmail.com",
-    pass: "your_app_password_here" // use an app password for Gmail
+    user:'ian.childress10@gmail.com',
+    pass: 'mfkn byxh qgro ighe',
   },
 });
 
@@ -20,14 +18,10 @@ const transporter = nodemailer.createTransport({
     to: " ian.childress10@gmail.com",
     // gotta figure out a way to make this dynamic
     subject: "Hello ✔",
-    text: "Hello world?"
+    text: "Hello world?",
+    html: "<b>Hello world?</b>",
 });
 
 // basic logging
 console.log("Message sent: ", info.messageId);
 })().catch(console.error);
-
-export default function SendEmail() {
-  alert("SendEmail component loaded");
-  return <div>SendEmail</div>;
-}
