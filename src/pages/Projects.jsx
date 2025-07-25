@@ -1,31 +1,37 @@
 import { Link } from "react-router-dom";
 import "../App.css";
 import NavBar from "../Components/NavBar.jsx";
+import React from "react";
 
 function Projects() {
+    const [customerType, setCustomerType] = React.useState("");
   return (
     <>
-    <div className="nav">
-      <NavBar></NavBar>
-    </div>
-      <div className="projects">
-        <h1>Our Projects</h1>
-        <p>Here are some of our recent projects</p>
-
-        <ul>
-          <li>
-            <h2>Project 1</h2>
-            <p>Custom Brick FirePlace</p>
-          </li>
-          <li>
-            <h2>Project 2</h2>
-            <p>Stone Patio Installation</p>
-            <li>
-              <h2>Project 3</h2>
-              <p>Brick Wall Restoration</p>
-            </li>
-          </li>
-        </ul>
+      <div className="nav">
+        <NavBar></NavBar>
+      </div>
+      
+      <div className="services">
+        <button className="residential" onClick={() => setCustomerType("residential")}>
+        Residential
+      </button>
+      <button className="commercial" onClick={() => setCustomerType("commercial")}>
+        Commercial
+      </button>
+      <div>
+        {customerType === "residential" && (
+          <div className="residential-content">
+            <h2>Residential Services</h2>
+            <p>We offer a range of residential services to meet your needs.</p>
+          </div>
+        )}
+        {customerType === "commercial" && (
+          <div className="commercial-content">
+            <h2>Commercial Services</h2>
+            <p>We provide comprehensive solutions for commercial projects.</p>
+          </div>
+        )}
+      </div>
       </div>
     </>
   );
