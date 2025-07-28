@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: process.env.EMAIL_USER,
+    user: process.env.EMAIL_USER, //first time using a real environment variable, pretty neat.
     pass: process.env.EMAIL_PASS, // use an app password for Gmail
   },
 });
@@ -30,7 +30,7 @@ app.post("/contact", async (req, res) => {
   const { name, phone, address, message } = req.body;
   console.log("Contact form submitted:", { name, phone, address, message });
   customerSubmissions.push({ name, phone, address, message });
-
+  
   try {
     await transporter.sendMail({
       from: '"Ian C" <ian.childress10@gmail.com>',
@@ -39,8 +39,10 @@ app.post("/contact", async (req, res) => {
       text: `You have a new contact form submission:\n\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\nMessage: ${message}`,
     });
     console.log("Notification email sent");
+    res.status(200).json({ success: true, message: "Email sent!" });
   } catch (error) {
     console.error("Error sending email:", error);
+    res.status(500).json({ success: false, message: "Failed to send email." });
   }
 });
 

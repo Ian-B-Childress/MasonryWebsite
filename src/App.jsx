@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, Link} from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
+import NotFound from './pages/NotFound.jsx'
 import './App.css'
 import project1 from './images/project1.jpg'
 import ReactDOM from 'react-dom'
@@ -19,6 +20,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/projects' element={<Projects />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
     </BrowserRouter>
     
