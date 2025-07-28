@@ -1,4 +1,6 @@
 const express = require("express");
+const dotenv = require("dotenv").config();
+
 
 const app = express();
 
@@ -14,8 +16,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: "ian.childress10@gmail.com",
-    pass: "mfkn byxh qgro ighe", // use an app password for Gmail
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS, // use an app password for Gmail
   },
 });
 

@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+#server.js to hide secrets
+/masonry-backend/.env
+.env
+.env
