@@ -23,7 +23,9 @@ HTML5
 
 CSS3
 
-React Router DOM (for page routing)
+Express
+
+Node
 
 🛠️ Getting Started
 To run this project locally:
