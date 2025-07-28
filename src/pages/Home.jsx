@@ -5,7 +5,8 @@ import React from "react";
 import HomeContent from "../Components/HomeContent.jsx";
 import NavBar from "../Components/NavBar.jsx";
 import AboutUs from "../Components/AboutUs.jsx";
-import Gallery from "../Components/Gallery.jsx";
+import WhyChooseUs from "../Components/WhyChooseUs.jsx";
+import FAQ from "../Components/FAQ.jsx";
 
 function Home() {
   return (
@@ -17,12 +18,15 @@ function Home() {
         <HomeContent></HomeContent>
       </div>
       <br></br>
-      <div className="HomeAboutUs">
+      <div className="homeAboutUs">
         <AboutUs></AboutUs>
       </div>
-      <div className="HomeGallery">
-        <Gallery></Gallery>
-        </div>
+      <div className="home-why-choose-us">
+        <WhyChooseUs></WhyChooseUs>
+      </div>
+      <div className="home-faq">
+        <FAQ></FAQ>
+      </div>
     </>
   );
 }

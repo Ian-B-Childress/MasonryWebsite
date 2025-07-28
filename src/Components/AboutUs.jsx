@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../App.css";
 import aboutCompanyImg from "../images/construction-worker-laying-red-brick-600nw-2488586989.webp"
 
