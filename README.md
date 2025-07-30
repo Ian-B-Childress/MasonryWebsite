@@ -5,14 +5,21 @@ This is a work-in-progress website for Melvin Masonry, a family-owned masonry bu
 Work in Progress
 Currently features a functioning navigation bar, two pages, placeholder images, and some basic CSS hover effects. More functionality and polish coming soon!
 
-✨ Features
-Navigation bar with interactive dropdowns
 
+<img width="1899" height="931" alt="Screenshot 2025-07-28 194902" src="https://github.com/user-attachments/assets/2c7b3b58-3ed1-421e-abdc-7edbafb0e994" />
+
+
+
+✨ Features
 Simple multi-page routing with React Router
 
 Clean layout and basic mobile responsiveness
 
 Custom CSS hover effects for user interaction
+
+Express server under test
+
+Nodemailer to send and relay job specifications
 
 🧰 Tech Stack
 React (with Vite)
@@ -23,7 +30,9 @@ HTML5
 
 CSS3
 
-React Router DOM (for page routing)
+Express
+
+Node
 
 🛠️ Getting Started
 To run this project locally:
