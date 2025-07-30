@@ -1,44 +1,55 @@
 import React from "react";
 import "../App.css";
+import riverFill from "../images/riverfill10.webp";
+import eastRidge from "../images/eastRidge.webp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHammer, faCheckCircle, faUserShield } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function WhyChooseUs() {
   return (
-    <div className="why-us-container">
-      <h1>Why Choose Us?</h1>
-      <ul>
-        <li>
-          <p>
-            Trusted by Pikeville residents and businesses for over 55 years. We
-            deliver high-quality work at honest, affordable rates.
-          </p>
-        </li>
-        <li>
-          <p>
-            Our family has passed down masonry skills for three generations.
-            You'll be hard-pressed to find craftsmanship like this anywhere
-            else.
-          </p>
-        </li>
-        <li>
-          <p>
-            We've built some of Pikeville's most recognized structures,
-            including RiverFill 10, Mullins School, and the Pikeville Medical
-            Center drive-thru.
-          </p>
-        </li>
-        <li>
-          <p>
-            We source only the best materials, whether local or from top
-            suppliers across the country. Your project deserves nothing less.
-          </p>
-        </li>
-        <li>
-          <p>
-            We put our customers first, always. Their trust is the reason we've
-            stayed in business for nearly six decades.
-          </p>
-        </li>
-      </ul>
-    </div>
+    <>
+      <div className="why-us-container">
+        <h1>Why Choose Us?</h1>
+        <ul>
+          <li>
+            
+            <p>
+              
+              55+ years serving Pikeville businesses and homes.
+            </p>
+          </li>
+          <li>
+            <p>
+              3 generations of masonry experience passed down.
+            </p>
+          </li>
+          <li>
+            <p>
+              <FontAwesomeIcon icon={faHammer} size="1.5x"/>
+              Built RiverFill 10, East Ridge HS, and Pikeville Medical Center's new diagnostic center.
+            </p>
+          </li>
+          <li>
+            <p>
+              We only use trusted, high-quality materials | locally sourced or nationally supplied.
+            </p>
+          </li>
+          <li>
+            <p>
+             Your project is our priority. We've earned trust by putting clients first since day one.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div className="why-us-images">
+        <div className="why-us-riverfill">
+          <img src={riverFill} alt="RiverFill 10" />
+        </div>
+        <div className="why-us-east-ridge">
+          <img src={eastRidge} alt="" />
+        </div>
+      </div>
+    </>
   );
 }

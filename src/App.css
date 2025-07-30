@@ -336,18 +336,55 @@ img {
   border-radius: 20px;
 }
 
+
+.home-why-choose-us {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  margin-top: 6rem;
+  margin: 5rem;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e5dfda;
+  grid-template-areas: initial;
+  padding: 2rem;
+  padding-block: 4rem;
+  border-radius: 40px;
+}
+
+.why-us-images{
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  
+}
+
+.why-us-riverfill img{
+  width: 100%;
+  aspect-ratio: 4 / 2;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.why-us-east-ridge img {
+  width: 100%;
+  aspect-ratio: 4 / 2;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+
 .why-us-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem;
-  padding-right: 3rem;
-  padding-block: 4rem;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #e5dfda;
   border-radius: 20px;
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 8rem;
-  border: solid 3px #eee;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  border: solid 3px #5f3e24;
 }
 
 .why-us-container h1 {
