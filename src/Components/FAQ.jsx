@@ -2,10 +2,9 @@ import "../App.css";
 
 export default function FAQ() {
   return (
-    <div className="faq">
+    <div className="faq-container">
       <div>
-        <h1>Frequently Asked Questions</h1>
-        <p>Here are some common questions we receive from our customers.</p>
+        <h1>Frequently Asked Questions:</h1>
       </div>
       <div className="faq-question-1">
         <h2>Do you offer free estimates?</h2>
