@@ -387,6 +387,12 @@ img {
   border: solid 3px #5f3e24;
 }
 
+.why-us-container li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .why-us-container h1 {
   margin-bottom: 1rem;
   border-bottom: solid 2px #5f3e24;

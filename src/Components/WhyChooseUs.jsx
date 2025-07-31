@@ -4,7 +4,7 @@ import riverFill from "../images/riverfill10.webp";
 import eastRidge from "../images/eastRidge.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHammer, faCheckCircle, faUserShield } from "@fortawesome/free-solid-svg-icons";
-
+import { faBuilding, faHandshake, faUsers} from "@fortawesome/free-solid-svg-icons";
 
 export default function WhyChooseUs() {
   return (
@@ -15,28 +15,31 @@ export default function WhyChooseUs() {
           <li>
             
             <p>
-              
+              <FontAwesomeIcon icon={faUserShield} size="1.5x" style={{marginRight: ".5rem"}}/>
               55+ years serving Pikeville businesses and homes.
             </p>
           </li>
           <li>
             <p>
+              <FontAwesomeIcon icon={faUsers} size="1.5x" style={{marginRight: ".5rem"}}/>
               3 generations of masonry experience passed down.
             </p>
           </li>
           <li>
             <p>
-              <FontAwesomeIcon icon={faHammer} size="1.5x"/>
+              <FontAwesomeIcon icon={faHammer} size="1.5x" style={{marginRight: ".5rem"}}/>
               Built RiverFill 10, East Ridge HS, and Pikeville Medical Center's new diagnostic center.
             </p>
           </li>
           <li>
             <p>
+              <FontAwesomeIcon icon={faBuilding} size="1.5x" style={{marginRight: ".5rem"}}/>
               We only use trusted, high-quality materials | locally sourced or nationally supplied.
             </p>
           </li>
           <li>
             <p>
+              <FontAwesomeIcon icon={faHandshake} size="1.5x" style={{marginRight: ".5rem"}}/>
              Your project is our priority. We've earned trust by putting clients first since day one.
             </p>
           </li>
