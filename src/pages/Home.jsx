@@ -7,6 +7,7 @@ import NavBar from "../Components/NavBar.jsx";
 import AboutUs from "../Components/AboutUs.jsx";
 import WhyChooseUs from "../Components/WhyChooseUs.jsx";
 import FAQ from "../Components/FAQ.jsx";
+import Services from "../Components/Services.jsx";
 
 function Home() {
   return (
@@ -21,11 +22,13 @@ function Home() {
       <div className="homeAboutUs">
         <AboutUs></AboutUs>
       </div>
+      <div className="home-service-cards"> 
+        <Services></Services>
+      </div>
       <div className="home-why-choose-us">
         <WhyChooseUs></WhyChooseUs>
       </div>
       <div className="home-faq">
-        <FAQ></FAQ>
       </div>
     </>
   );
