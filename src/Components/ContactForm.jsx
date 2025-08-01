@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 import { Link } from "react-router-dom";
 import { Component } from "react";
 
@@ -13,6 +14,7 @@ class ContactForm extends Component {
       phone: "",
       address: "",
       message: "",
+      selectedMaterial: "selectJobMaterial",
       loading: false, //sets loading to false by default
     };
 
@@ -22,7 +24,7 @@ class ContactForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  //handleChange will update the state of the name, phone, address, and message fields
+  //handleChange will update the state of the material, name, phone, address, and message fields
   handleChange(event) {
     this.setState({
       [event.target.name]: event.target.value,
@@ -49,8 +51,8 @@ class ContactForm extends Component {
       .catch((error) => {
         console.error("Error:", error);
         this.setState({ loading: false }); //set loading to false if there is an error
-      }
-  )};
+      });
+  }
 
   //now we render the form
   //we will use the state to set the value of the input fields
@@ -62,7 +64,30 @@ class ContactForm extends Component {
           <div className="loading-spinner" id="loading"></div>
         )}
         <form onSubmit={this.handleSubmit}>
-          <label>
+          <label className="contact-material">
+            Job Material:
+            <select
+              name="selectedMaterial"
+              value={this.state.selectedMaterial}
+              onChange={(e) =>
+                this.setState({ selectedMaterial: e.target.value })
+              }
+            >
+              <option value="selectJobMaterial" disabled>
+                Select Job Material
+              </option>
+              <option value="brick">
+                Brick
+              </option>
+              <option value="block">
+                Block
+              </option>
+              <option value="stone">
+                Stone
+              </option>
+            </select>
+          </label>
+          <label className="contact-name">
             Name:
             <input
               type="text"
@@ -72,7 +97,7 @@ class ContactForm extends Component {
               required
             />
           </label>
-          <label>
+          <label className="contact-number">
             Phone Number:
             <input
               type="tel"
@@ -82,7 +107,7 @@ class ContactForm extends Component {
               required
             />
           </label>
-          <label>
+          <label className="contact-address">
             Address:
             <textarea
               name="address"
@@ -91,7 +116,7 @@ class ContactForm extends Component {
               required
             ></textarea>
           </label>
-          <label>
+          <label className="contact-message">
             Message:
             <textarea
               name="message"
@@ -101,7 +126,9 @@ class ContactForm extends Component {
             ></textarea>
           </label>
           <div>
-            <button type="submit" disabled={this.state.loading}>Submit</button>
+            <button type="submit" disabled={this.state.loading}>
+              Submit
+            </button>
             <Link to="/">
               <button type="button">Cancel</button>
             </Link>

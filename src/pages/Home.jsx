@@ -8,6 +8,7 @@ import AboutUs from "../Components/AboutUs.jsx";
 import WhyChooseUs from "../Components/WhyChooseUs.jsx";
 import FAQ from "../Components/FAQ.jsx";
 import Services from "../Components/Services.jsx";
+import Footer from "../Components/Footer.jsx";
 
 function Home() {
   return (
@@ -28,7 +29,8 @@ function Home() {
       <div className="home-why-choose-us">
         <WhyChooseUs></WhyChooseUs>
       </div>
-      <div className="home-faq">
+      <div className="home-footer">
+        <Footer></Footer>
       </div>
     </>
   );

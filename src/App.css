@@ -29,7 +29,6 @@ body {
 
 #root {
   width: 100%;
-  padding-bottom: 2rem;
   text-align: center;
   background: #93785b;
   background: linear-gradient(
@@ -385,6 +384,7 @@ img {
   aspect-ratio: 4 / 2;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  margin-top: 1rem;
 }
 
 
@@ -426,79 +426,6 @@ img {
   margin: 0.5rem 0;
   padding: 0.5rem;
   border-left: #3e362e solid 3px;
-}
-
-
-.faq-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  background-color: #e5dfda;
-  padding: 1rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  margin-right: 25rem;
-  margin-left: 25rem;
-  justify-content: center;
-  align-items: center;
-  border: solid 3px #5f3e24;
-}
-
-.faq-question-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background-color: #e5dfda;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  margin-bottom: 1rem;
-  border: solid 3px #5f3e24;
-}
-
-.faq-question-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background-color: #e5dfda;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  margin-bottom: 1rem;
-  border: solid 3px #5f3e24;
-}
-
-.faq-question-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background-color: #e5dfda;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  margin-bottom: 1rem;
-  border: solid 3px #5f3e24;
-}
-
-.faq-question-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;  
-  padding: 1rem;
-  background-color: #e5dfda;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  margin-bottom: 1rem;
-  border: solid 3px #5f3e24;
-}    
-
-.faq-container p {
-   font-size: 1.3rem;
-  line-height: 1.6;
 }
 
 .services-header {
@@ -588,4 +515,14 @@ img {
 }
 .free-quote-cta:hover {
   background-color: #3e362e;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5dfda;
+  padding: 2rem;
 }
