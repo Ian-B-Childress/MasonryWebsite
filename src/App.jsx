@@ -10,18 +10,21 @@ import ReactDOM from 'react-dom'
 import { createRoot } from 'react-dom/client'
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
+import Layout from './Components/Layout.jsx'
 
 
 function App() {
 
   return (
     <BrowserRouter>
+    <Layout>
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/projects' element={<Projects />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
+      </Layout>
     </BrowserRouter>
     
   );

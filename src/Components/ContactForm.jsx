@@ -59,81 +59,80 @@ class ContactForm extends Component {
   render() {
     return (
       <>
-        {this.state.loading && (
-          //short circuit conditional^^ renders the loading spinner if this.state.loading is true.
-          <div className="loading-spinner" id="loading"></div>
-        )}
-        <form onSubmit={this.handleSubmit}>
-          <label className="contact-material">
-            Job Material:
-            <select
-              name="selectedMaterial"
-              value={this.state.selectedMaterial}
-              onChange={(e) =>
-                this.setState({ selectedMaterial: e.target.value })
-              }
-            >
-              <option value="selectJobMaterial" disabled>
-                Select Job Material
-              </option>
-              <option value="brick">
-                Brick
-              </option>
-              <option value="block">
-                Block
-              </option>
-              <option value="stone">
-                Stone
-              </option>
-            </select>
-          </label>
-          <label className="contact-name">
-            Name:
-            <input
-              type="text"
-              name="name"
-              value={this.state.name}
-              onChange={this.handleChange}
-              required
-            />
-          </label>
-          <label className="contact-number">
-            Phone Number:
-            <input
-              type="tel"
-              name="phone"
-              value={this.state.phone}
-              onChange={this.handleChange}
-              required
-            />
-          </label>
-          <label className="contact-address">
-            Address:
-            <textarea
-              name="address"
-              value={this.state.address}
-              onChange={this.handleChange}
-              required
-            ></textarea>
-          </label>
-          <label className="contact-message">
-            Message:
-            <textarea
-              name="message"
-              value={this.state.message}
-              onChange={this.handleChange}
-              required
-            ></textarea>
-          </label>
-          <div>
-            <button type="submit" disabled={this.state.loading}>
-              Submit
-            </button>
-            <Link to="/">
-              <button type="button">Cancel</button>
-            </Link>
-          </div>
-        </form>
+        <div className="contact-form-container">
+          {this.state.loading && (
+            //short circuit conditional^^ renders the loading spinner if this.state.loading is true.
+            <div className="loading-spinner" id="loading"></div>
+          )}
+          <form onSubmit={this.handleSubmit}>
+            <label className="contact-material">
+              <select
+                name="selectedMaterial"
+                value={this.state.selectedMaterial}
+                onChange={(e) =>
+                  this.setState({ selectedMaterial: e.target.value })
+                }
+              >
+                <option value="selectJobMaterial" disabled>
+                  Select Job Material
+                </option>
+                <option value="brick">Brick</option>
+                <option value="block">Block</option>
+                <option value="stone">Stone</option>
+              </select>
+            </label>
+            <label className="contact-name">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={this.state.name}
+                onChange={this.handleChange}
+                required
+              />
+            </label>
+            <label className="contact-number">
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Phone Number"
+                value={this.state.phone}
+                onChange={this.handleChange}
+                required
+              />
+            </label>
+            <label className="contact-address">
+              <textarea
+                name="address"
+                placeholder="Job Address"
+                value={this.state.address}
+                onChange={this.handleChange}
+                required
+              ></textarea>
+            </label>
+            <label className="contact-message">
+              <textarea
+                name="message"
+                placeholder="Job Description"
+                value={this.state.message}
+                onChange={this.handleChange}
+                required
+              ></textarea>
+            </label>
+            <div>
+              <button type="submit" disabled={this.state.loading}>
+                Submit
+              </button>
+              <Link to="/">
+                <button type="button">Cancel</button>
+              </Link>
+            </div>
+          </form>
+        </div>
+        <div className="empty-space-easter-egg">
+          
+                <p>hey if u found this heres my github : <a href="https://github.com/Ian-B-Childress">github</a> </p>
+        </div>
       </>
     );
   }

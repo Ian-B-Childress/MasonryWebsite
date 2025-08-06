@@ -29,9 +29,6 @@ function Home() {
       <div className="home-why-choose-us">
         <WhyChooseUs></WhyChooseUs>
       </div>
-      <div className="home-footer">
-        <Footer></Footer>
-      </div>
     </>
   );
 }
