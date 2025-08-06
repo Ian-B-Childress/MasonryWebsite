@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import croppedBrickPath from "../images/croppedBrickPath.webp";
 import fireplace from "../images/fireplace.png";
+import blockFoundation from "../images/blocks.webp";
 
 export default function Services() {
   return (
@@ -14,7 +15,7 @@ export default function Services() {
           <button className="free-quote-cta">Get Your Free Quote</button>
         </div>
         <div className="block-card">
-          <img src="" alt="" />
+          <img src={blockFoundation} alt="" />
           <h2>Block</h2>
            <button className="free-quote-cta">Get Your Free Quote</button>
         </div>

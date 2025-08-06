@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import NavBar from "../Components/NavBar.jsx";
 import React from "react";
-import croppedBrickPath from "../images/brickpath.jpg";
+import croppedBrickPath from "../images/croppedbrickpath.webp";
 import fireplace from "../images/fireplace.png";
 
 // going to add a link to the brick, block, and stone projects, redirecting to their respective pages
