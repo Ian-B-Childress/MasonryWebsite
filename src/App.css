@@ -1,6 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100);
 
-h1, h2 {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
   font-weight: 700;
   font-size: 2.5rem;
   color: #3e362e;
@@ -27,13 +34,12 @@ html {
   flex: 1;
 }
 
-
 body {
   margin: 0;
   height: 100%;
   display: block;
   color: #3e362e;
-   background: linear-gradient(
+  background: linear-gradient(
     117deg,
     rgba(147, 120, 91, 1) 0%,
     rgba(138, 127, 109, 1) 50%,
@@ -77,77 +83,108 @@ body {
 }
 
 .logo {
-  height: 4em;
-  padding: 1.5em;
+  height: 4.5rem;
+  padding: 1rem;
   will-change: filter;
   transition: filter 300ms;
+  flex-shrink: 0;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em hsla(30, 43%, 37%, 1));
 }
 
 nav {
+  width: 65%;
+  max-width: 65%;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
-  justify-content: flex-start;
-  align-items: center; /* Center align the navbar content */
-  padding: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar {
-  height: 6%;
-  width: 100%;
+  width: 65%;
+  max-width: 100%;
+  box-sizing: border-box;
   background-color: #e5dfda;
   border-radius: 20px;
-  width: 65%;
-  max-height: 3rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  height: 4rem;
   margin: 1% auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+  overflow-x: visible; /* prevent scroll */
 }
 
 ul {
   list-style-type: none;
-  display: flex; /* Align nav links horizontally */
+  display: flex;
+  max-width: 100%;
+  padding-left: 0;
+  margin: 0;
 }
 
 .dropdown {
   position: relative; /* Required to position dropdown relative to its parent */
 }
 
-#linkTo {
-  color: black;
-  text-decoration: none; /* Remove underline from links */
+.linkTo {
+  white-space: nowrap;
   padding: 0.5rem 1rem;
+  color: black;
+  text-decoration: solid underline black;
+  max-width: none;
+  display: inline-block;
 }
 
-#linkTo:hover {
+.linkTo:hover {
   background-color: #865d36;
+  color: black;
 }
 
 .dropdown-menu {
-  display: none; /* Hide dropdown menu by default */
-  position: relative; /* Position relative to parent */
-  text-decoration: solid underline;
-  display: flex; /* Show items in a row */
-  gap: 1rem; /* Space items evenly */
+  display: flex;
+  gap: 1rem;
+  padding-left: 0;
+  padding-right: 1rem;
+  margin: 0;
+  align-items: center;
+  overflow-x: visible; /* NOT auto, to avoid scroll */
+  max-width: 100%; /* must NOT be wider than navbar */
+  flex-wrap: nowrap; /* keep in one line */
 }
 
 .dropdown-menu li {
-  padding: 0.5rem 1rem;
+  padding: 0; /* or smaller value */
 }
 
-.dropdown-menu a {
-  color: black;
-  text-decoration: none;
-  max-width: 15%;
-}
-
-.dropdown-menu a:hover {
-  color: teal; /* Hover color for links */
+.dropdown-menu :hover {
   border-radius: 10px;
 }
 
-/* Show dropdown when hovering on the parent */
-.dropdown:hover .dropdown-menu {
-  display: flex; /* Show dropdown when hovered */
+@media (max-width: 600px) {
+  .navbar {
+    width: 90%;
+    height: 3rem;
+  }
+  .linkTo {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  .logo {
+    height: 3.5rem;
+    padding: .8rem 0;
+  }
+  .linkTo:active,
+.linkTo:focus {
+  background-color: #865d36;
+  color: black;
+  outline:#3e362e;
+  border-radius: 5px;
+}
 }
 
 .h-header {
@@ -261,10 +298,10 @@ img {
   margin-left: 0;
   justify-content: space-evenly;
   padding-block: 4rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
   align-items: center;
-  border-radius: 12px
+  border-radius: 12px;
 }
 
 .aboutTheCompany {
@@ -279,7 +316,7 @@ img {
   background-color: #e5dfda;
   border-radius: 20px;
   border: solid 3px #5f3e24;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   flex-wrap: wrap;
   flex: 2 1 400px;
 }
@@ -293,7 +330,7 @@ img {
   display: none;
   border: solid 3px #5f3e24;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   max-width: 500px;
 }
 
@@ -361,7 +398,6 @@ img {
   border-radius: 20px;
 }
 
-
 .home-why-choose-us {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -380,27 +416,25 @@ img {
   border: solid 3px #5f3e24;
 }
 
-.why-us-images{
+.why-us-images {
   width: 100%;
   aspect-ratio: 4 / 3;
-  
 }
 
-.why-us-riverfill img{
+.why-us-riverfill img {
   width: 100%;
   aspect-ratio: 4 / 2;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .why-us-east-ridge img {
   width: 100%;
   aspect-ratio: 4 / 2;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   margin-top: 1rem;
 }
-
 
 .why-us-container {
   display: flex;
@@ -410,7 +444,7 @@ img {
   padding: 2rem;
   background-color: #e5dfda;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   border: solid 3px #5f3e24;
 }
 
@@ -450,9 +484,9 @@ img {
   margin-top: 5rem;
   background-color: #e5dfda;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   border: solid 3px #5f3e24;
-} 
+}
 
 .brick-card {
   grid-area: brick-card;
@@ -462,7 +496,7 @@ img {
   justify-content: center;
   background-color: #e5dfda;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   border: solid 3px #5f3e24;
 }
@@ -471,7 +505,7 @@ img {
   width: 100%;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .stone-card {
@@ -482,7 +516,7 @@ img {
   justify-content: center;
   background-color: #e5dfda;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   border: solid 3px #5f3e24;
 }
@@ -491,7 +525,7 @@ img {
   width: 100%;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .block-card {
@@ -502,7 +536,7 @@ img {
   justify-content: center;
   background-color: #e5dfda;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   border: solid 3px #5f3e24;
 }
@@ -512,7 +546,7 @@ img {
   width: 100%;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .services-container {
@@ -524,7 +558,7 @@ img {
 }
 
 .free-quote-cta {
-  background-color:  #865d36;
+  background-color: #865d36;
   color: white;
   border-radius: 5px;
 }
@@ -532,10 +566,9 @@ img {
   background-color: #3e362e;
 }
 
-
 .footer-container {
   display: flex;
-  position:static;
+  position: static;
   bottom: 0;
   flex-direction: column;
   align-items: center;
@@ -556,7 +589,7 @@ img {
   background-color: #e5dfda;
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 form {
@@ -565,19 +598,23 @@ form {
   gap: 1rem;
 }
 
-form, label {
+form,
+label {
   font-size: 1.1rem;
   color: #3e362e;
   gap: 1rem;
 }
 
-textarea, input[type="text"], input[type="tel"], select {
+textarea,
+input[type="text"],
+input[type="tel"],
+select {
   width: 100%;
   padding: 0.5rem;
   border-radius: 5px;
   border: solid 1px #3e362e;
   font-size: 1rem;
-  resize: inherit
+  resize: inherit;
 }
 
 .contact-form-container button {
@@ -587,19 +624,19 @@ textarea, input[type="text"], input[type="tel"], select {
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
-  margin: .3rem;
+  margin: 0.3rem;
 }
 
 .empty-space-easter-egg {
   opacity: 0;
   color: black;
-  height:auto;
+  height: auto;
   width: 100vh;
 }
 
 .empty-space-easter-egg :hover {
   display: none;
-  cursor:none
+  cursor: none;
 }
 
 .not-found {
@@ -614,9 +651,9 @@ textarea, input[type="text"], input[type="tel"], select {
   padding: 2rem;
   border-radius: 20px;
 }
- 
+
 .not-found h3 {
   background-color: #865d36;
   padding: 1rem 0;
-  border-radius: 5px
+  border-radius: 5px;
 }
