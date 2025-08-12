@@ -116,7 +116,7 @@ nav {
   align-items: center;
   gap: 1rem;
   justify-content: flex-start;
-  overflow-x: visible; /* prevent scroll */
+  overflow-x: visible; 
 }
 
 ul {
@@ -128,7 +128,7 @@ ul {
 }
 
 .dropdown {
-  position: relative; /* Required to position dropdown relative to its parent */
+  position: relative; 
 }
 
 .linkTo {
@@ -152,9 +152,9 @@ ul {
   padding-right: 1rem;
   margin: 0;
   align-items: center;
-  overflow-x: visible; /* NOT auto, to avoid scroll */
-  max-width: 100%; /* must NOT be wider than navbar */
-  flex-wrap: nowrap; /* keep in one line */
+  overflow-x: visible;
+  max-width: 100%; 
+  flex-wrap: nowrap;
 }
 
 .dropdown-menu li {
@@ -169,6 +169,7 @@ ul {
   .navbar {
     width: 90%;
     height: 3rem;
+    margin-bottom: 1rem;
   }
   .linkTo {
     padding: 0.3rem 0.5rem;
@@ -260,6 +261,66 @@ img {
   font-weight: bold;
 }
 
+@media (max-width: 600px) {
+  .homeContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 20% 1fr;
+    margin-top: 2rem;
+    height: 50vh;             
+    width: 95vw;
+    max-width: 100%;
+    background-position: center top; 
+    background-size: cover;      
+  }
+  p.welcome{
+    font-size: 0.8rem;
+    text-wrap:inherit;
+  }
+
+  p.h2p{
+    font-size: 0.6rem;
+    margin: 0 auto;
+  }
+  .h-header{
+    display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr;
+  width: 50vw;
+  max-width: 50vw;
+  height: 20vh;
+  
+  justify-content: center;
+  margin-top:2rem;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  margin-right: 10%;
+  border-radius: 20px;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #callToAction {
+    width: 4rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+  }
+
+  #ctaContact {
+   font-size: 0.6rem;
+  }
+
+  #ctaWork {
+    font-size: 0.6rem;
+  }
+}
+
+
 /* setting up the animation for home image and header */
 @keyframes swooshIn {
   0% {
@@ -282,6 +343,7 @@ img {
     opacity: 1;
   }
 }
+
 .home {
   animation: swooshIn 1s ease-out forwards;
   opacity: 0;

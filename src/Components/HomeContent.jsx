@@ -1,9 +1,7 @@
 import React from "react";
 import Home from "../pages/Home";
 import "../App.css";
-import project1 from "../images/project1.jpg";
 import { Link } from "react-router-dom";
-import placeholder from "../images/placeholder.WebP";
 
 export default function HomeSectionOne() {
   return (
