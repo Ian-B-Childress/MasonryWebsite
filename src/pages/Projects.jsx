@@ -14,11 +14,11 @@ function Projects() {
       <div className="nav">
         <NavBar></NavBar>
       </div>
-            <div className="services-container">
+            <div className="services-container" >
               <div className="brick-card">
                 <img src={croppedBrickPath} alt="" />
                 <h2>Brick</h2>
-                <button className="free-quote-cta">Get Your Free Quote</button>
+                <button className="free-quote-cta" >Get Your Free Quote</button>
               </div>
               <div className="block-card">
                 <img src="" alt="" />

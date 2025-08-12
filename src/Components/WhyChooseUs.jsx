@@ -9,7 +9,7 @@ import { faBuilding, faHandshake, faUsers} from "@fortawesome/free-solid-svg-ico
 export default function WhyChooseUs() {
   return (
     <>
-      <div className="why-us-container">
+      <div className="why-us-container" data-aos="fade-left" data-aos-anchor-placement="#example-anchor" data-aos-offset="500" data-aos-duration="500">
         <h1>Why Choose Us?</h1>
         <ul>
           <li>
@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
           </li>
         </ul>
       </div>
-      <div className="why-us-images">
+      <div className="why-us-images" data-aos="fade-left" data-aos-anchor-placement="#example-anchor" data-aos-offset="500" data-aos-duration="500">
         <div className="why-us-riverfill">
           <img src={riverFill} alt="RiverFill 10" />
         </div>

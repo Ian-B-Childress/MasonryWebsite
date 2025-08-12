@@ -116,7 +116,7 @@ nav {
   align-items: center;
   gap: 1rem;
   justify-content: flex-start;
-  overflow-x: visible; 
+  overflow-x: visible;
 }
 
 ul {
@@ -128,7 +128,7 @@ ul {
 }
 
 .dropdown {
-  position: relative; 
+  position: relative;
 }
 
 .linkTo {
@@ -153,7 +153,7 @@ ul {
   margin: 0;
   align-items: center;
   overflow-x: visible;
-  max-width: 100%; 
+  max-width: 100%;
   flex-wrap: nowrap;
 }
 
@@ -177,15 +177,15 @@ ul {
   }
   .logo {
     height: 3.5rem;
-    padding: .8rem 0;
+    padding: 0.8rem 0;
   }
   .linkTo:active,
-.linkTo:focus {
-  background-color: #865d36;
-  color: black;
-  outline:#3e362e;
-  border-radius: 5px;
-}
+  .linkTo:focus {
+    background-color: #865d36;
+    color: black;
+    outline: #3e362e;
+    border-radius: 5px;
+  }
 }
 
 .h-header {
@@ -267,36 +267,36 @@ img {
     grid-template-columns: 1fr;
     grid-template-rows: 20% 20% 1fr;
     margin-top: 2rem;
-    height: 50vh;             
+    height: 50vh;
     width: 95vw;
     max-width: 100%;
-    background-position: center top; 
-    background-size: cover;      
+    background-position: center top;
+    background-size: cover;
   }
-  p.welcome{
+  p.welcome {
     font-size: 0.8rem;
-    text-wrap:inherit;
+    text-wrap: inherit;
   }
 
-  p.h2p{
+  p.h2p {
     font-size: 0.6rem;
     margin: 0 auto;
   }
-  .h-header{
+  .h-header {
     display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr;
-  width: 50vw;
-  max-width: 50vw;
-  height: 20vh;
-  
-  justify-content: center;
-  margin-top:2rem;
-  flex-wrap: wrap;
-  text-align: center;
-  margin: 0 auto;
-  margin-right: 10%;
-  border-radius: 20px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    width: 50vw;
+    max-width: 50vw;
+    height: 20vh;
+
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 10%;
+    border-radius: 20px;
   }
 
   .button-container {
@@ -312,14 +312,13 @@ img {
   }
 
   #ctaContact {
-   font-size: 0.6rem;
+    font-size: 0.6rem;
   }
 
   #ctaWork {
     font-size: 0.6rem;
   }
 }
-
 
 /* setting up the animation for home image and header */
 @keyframes swooshIn {
@@ -355,6 +354,7 @@ img {
 }
 
 .aboutUsContainer {
+  margin-top: 8rem;
   display: flex;
   padding-top: 2rem;
   margin-left: 0;
@@ -364,6 +364,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   border-radius: 12px;
+  margin-bottom: 8rem;;
 }
 
 .aboutTheCompany {
