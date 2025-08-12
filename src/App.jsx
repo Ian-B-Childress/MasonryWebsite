@@ -11,10 +11,17 @@ import { createRoot } from 'react-dom/client'
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Layout from './Components/Layout.jsx'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react'
 
 function App() {
-
+useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+}, []);
   return (
     <BrowserRouter>
     <Layout>

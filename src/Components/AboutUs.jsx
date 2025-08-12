@@ -6,7 +6,7 @@ export default function AboutUs() {
   return (
     <>
       <div className="aboutUsContainer">
-        <div className="aboutTheCompany">
+        <div className="aboutTheCompany" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <h1>About The Company</h1>
           <p>
             Founded in 1967 by Danny Melvin, our company was built from the
