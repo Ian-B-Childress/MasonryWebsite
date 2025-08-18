@@ -62,13 +62,18 @@ class ContactForm extends Component {
         <div className="contact-form-container">
           {this.state.loading && (
             //short circuit conditional^^ renders the loading spinner if this.state.loading is true.
-            <div className="loading-spinner" id="loading"></div>
+            <div className="loading-container">
+              <div className="loading-spinner" id="loading"></div>
+            </div>
+            
           )}
+
           <form onSubmit={this.handleSubmit}>
             <label className="contact-material">
               <select
                 name="selectedMaterial"
                 value={this.state.selectedMaterial}
+                required
                 onChange={(e) =>
                   this.setState({ selectedMaterial: e.target.value })
                 }
@@ -130,8 +135,10 @@ class ContactForm extends Component {
           </form>
         </div>
         <div className="empty-space-easter-egg">
-          
-                <p>hey if u found this heres my github : <a href="https://github.com/Ian-B-Childress">github</a> </p>
+          <p>
+            hey if u found this heres my github :{" "}
+            <a href="https://github.com/Ian-B-Childress">github</a>{" "}
+          </p>
         </div>
       </>
     );
