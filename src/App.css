@@ -6,9 +6,19 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body,
+:root {
   overflow-x: hidden;
   overscroll-behavior: contain;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    117deg,
+    rgba(147, 120, 91, 1) 0%,
+    rgba(138, 127, 109, 1) 50%,
+    rgba(134, 93, 54, 1) 100%
+  );
 }
 
 h1,
@@ -20,7 +30,6 @@ h2 {
 }
 
 html {
-  background: #93785b;
   background: linear-gradient(
     117deg,
     rgba(147, 120, 91, 1) 0%,
@@ -33,6 +42,8 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: inherit;
+  max-width: 100%;
 }
 
 .layout-content {
@@ -176,7 +187,6 @@ ul {
     height: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-   
   }
   .linkTo {
     padding: 0.3rem 0.5rem;
@@ -289,7 +299,6 @@ img {
   p.h2p {
     font-size: 0.65rem;
     margin: 0 auto;
-
   }
   .h-header {
     display: grid;
@@ -300,7 +309,7 @@ img {
     height: 25vh;
 
     justify-content: center;
-    
+
     text-align: center;
     margin: 0 auto;
     margin-right: 10%;
@@ -361,7 +370,7 @@ img {
   opacity: 0;
 }
 
-.aboutUsContainer{
+.aboutUsContainer {
   background-color: rgba(255, 255, 255, 0.05); /* slight separation */
   padding: 4rem 2rem;
 }
@@ -376,7 +385,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   border-radius: 12px;
-  margin-bottom: 8rem;;
+  margin-bottom: 8rem;
 }
 
 .aboutTheCompany {
@@ -444,7 +453,7 @@ img {
     margin-top: 9rem;
     margin-bottom: 5rem;
   }
-  .aboutTheCompany{
+  .aboutTheCompany {
     flex: 1 1 auto;
     max-width: 90%;
     margin: 1rem auto;
@@ -459,9 +468,6 @@ img {
     margin: 0.5rem 0;
   }
 }
-
-
-
 
 .serviceContainer {
   display: flex;
@@ -551,11 +557,12 @@ img {
     display: flex;
     flex-direction: column;
   }
-  ul, li {
+  ul,
+  li {
     display: block;
-    border-left: none !important; 
+    border-left: none !important;
   }
-  .why-us-container li{
+  .why-us-container li {
     border-bottom: #3e362e solid 2px;
   }
 
@@ -563,9 +570,6 @@ img {
     width: 100%;
     aspect-ratio: 4 / 3;
   }
-
-  
-  
 }
 
 .why-us-container {
@@ -696,7 +700,7 @@ img {
       "brick-card"
       "block-card"
       "stone-card";
-      margin-bottom: 5rem;
+    margin-bottom: 5rem;
   }
   .brick-card,
   .stone-card,
@@ -704,7 +708,6 @@ img {
     width: 100%;
     margin: 0 auto;
   }
-  
 }
 
 .free-quote-cta {
