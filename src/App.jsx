@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { use, useState } from 'react'
 import { BrowserRouter, Route, Routes, Link} from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
@@ -14,6 +14,7 @@ import Layout from './Components/Layout.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react'
+import { DynamicTitle } from './Components/DynamicTitle.jsx'
 
 function App() {
 useEffect(() => {
@@ -25,6 +26,7 @@ useEffect(() => {
   return (
     <BrowserRouter>
     <Layout>
+      <DynamicTitle />
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/projects' element={<Projects />} />
@@ -36,18 +38,6 @@ useEffect(() => {
     
   );
 }
-
-class Tool {
-  constructor(name){
-    this.tool = name 
-  }
-
-  present(){
-    return 'I have a ' + this.tool;
-  }
-}
-  const myTool = new Tool('Trowel');
-
   const root = createRoot(document.getElementById('root'))
 root.render(<App />)
 export default App
