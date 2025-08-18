@@ -42,7 +42,12 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: inherit;
+  background: linear-gradient(
+    117deg,
+    rgba(147, 120, 91, 1) 0%,
+    rgba(138, 127, 109, 1) 50%,
+    rgba(134, 93, 54, 1) 100%
+  );
   max-width: 100%;
 }
 
