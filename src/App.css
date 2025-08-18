@@ -440,6 +440,9 @@ img {
     margin-bottom: 5rem;
   }
   .aboutTheCompany{
+    flex: 1 1 auto;
+    max-width: 90%;
+    margin: 1rem auto;
     height: auto;
   }
   .aboutTheCompany h1 {
