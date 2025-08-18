@@ -353,6 +353,12 @@ img {
   opacity: 0;
 }
 
+.aboutUsContainer{
+  
+  background-color: rgba(255, 255, 255, 0.05); /* slight separation */
+  padding: 4rem 2rem;
+
+}
 .aboutUsContainer {
   margin-top: 8rem;
   display: flex;
@@ -616,6 +622,23 @@ img {
   grid-template-areas: "brick-card block-card stone-card";
   gap: 1rem;
   padding: 4rem 2rem;
+}
+
+@media (max-width: 600px) {
+  .services-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "brick-card"
+      "block-card"
+      "stone-card";
+  }
+  .brick-card,
+  .stone-card,
+  .block-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
 }
 
 .free-quote-cta {
