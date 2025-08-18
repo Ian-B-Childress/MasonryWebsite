@@ -167,9 +167,11 @@ ul {
 
 @media (max-width: 600px) {
   .navbar {
-    width: 90%;
+    width: 95%;
     height: 3rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
+   
   }
   .linkTo {
     padding: 0.3rem 0.5rem;
@@ -275,12 +277,14 @@ img {
   }
   p.welcome {
     font-size: 0.8rem;
-    text-wrap: inherit;
+    margin-top: 2rem;
+    height: 0.5rem;
   }
 
   p.h2p {
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     margin: 0 auto;
+
   }
   .h-header {
     display: grid;
@@ -288,11 +292,10 @@ img {
     grid-template-columns: 1fr;
     width: 50vw;
     max-width: 50vw;
-    height: 20vh;
+    height: 25vh;
 
     justify-content: center;
-    margin-top: 2rem;
-    flex-wrap: wrap;
+    
     text-align: center;
     margin: 0 auto;
     margin-right: 10%;
@@ -354,10 +357,8 @@ img {
 }
 
 .aboutUsContainer{
-  
   background-color: rgba(255, 255, 255, 0.05); /* slight separation */
   padding: 4rem 2rem;
-
 }
 .aboutUsContainer {
   margin-top: 8rem;
@@ -431,6 +432,13 @@ img {
 }
 
 @media (max-width: 600px) {
+  .aboutUsContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 9rem;
+    margin-bottom: 5rem;
+  }
   .aboutTheCompany{
     height: auto;
   }
@@ -501,6 +509,55 @@ img {
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .home-why-choose-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 95%;
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
+  .why-us-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .why-us-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .why-us-container li p {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  .why-us-container ul {
+    display: flex;
+    flex-direction: column;
+  }
+  ul, li {
+    display: block;
+    border-left: none !important; 
+  }
+  .why-us-container li{
+    border-bottom: #3e362e solid 2px;
+  }
+
+  .why-us-images {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  
+  
 }
 
 .why-us-container {
@@ -631,6 +688,7 @@ img {
       "brick-card"
       "block-card"
       "stone-card";
+      margin-bottom: 5rem;
   }
   .brick-card,
   .stone-card,
