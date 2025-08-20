@@ -4,6 +4,7 @@ import NavBar from "../Components/NavBar.jsx";
 import React from "react";
 import croppedBrickPath from "../images/croppedbrickpath.webp";
 import fireplace from "../images/fireplace.png";
+import blockimg from "../images/blockimg.webp";
 
 // going to add a link to the brick, block, and stone projects, redirecting to their respective pages
 // each image is a button that links to the specific project page
@@ -23,7 +24,7 @@ function Projects() {
                 </Link>
               </div>
               <div className="block-card">
-                <img src="" alt="" />
+                <img src={blockimg} alt="" />
                 <h2>Block</h2>
                 <Link to="/contact?material=block">
                  <button className="free-quote-cta">Get Your Free Quote</button>

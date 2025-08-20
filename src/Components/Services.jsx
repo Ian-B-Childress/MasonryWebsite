@@ -5,6 +5,7 @@ import croppedBrickPath from "../images/croppedbrickpath.webp";
 import fireplace from "../images/fireplace.png";
 import blockFoundation from "../images/blocks.webp";
 import contactForm from "./ContactForm.jsx";
+import blockimg from "../images/blockimg.webp";
 
 export default function Services() {
   return (
@@ -18,7 +19,7 @@ export default function Services() {
           </Link>
         </div>
         <div className="block-card" data-aos="fade-left">
-          <img src={blockFoundation} alt="" />
+          <img src={blockimg} alt="" />
           <h2>Block</h2>
           <Link to="/contact?material=block">
            <button className="free-quote-cta">Get Your Free Quote</button>
