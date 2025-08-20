@@ -9,12 +9,23 @@ class ContactForm extends Component {
   //initialize the state
   constructor(props) {
     super(props);
+
+    //parsing url parameters to prefill the form
+    
+    const parameters = new URLSearchParams(window.location.search);
+    //pulls the material from the url parameters, if it exists
+    //if it does not exist, it will default to "selectJobMaterial"
+    const material = (parameters.get("material")||"selectJobMaterial").toLowerCase();
+    const allowedMaterials = ["brick","block","stone"];
+    //if the material is not in the allowedMaterials array, it will default to "selectJobMaterial"
+    const selectedMaterial = allowedMaterials.includes(material) ? material:"selectJobMaterial";
+
     this.state = {
       name: "",
       phone: "",
       address: "",
       message: "",
-      selectedMaterial: "selectJobMaterial",
+      selectedMaterial: selectedMaterial, //sets the selected material to the material from the url parameters, or "selectJobMaterial" if it does not exist
       loading: false, //sets loading to false by default
     };
 

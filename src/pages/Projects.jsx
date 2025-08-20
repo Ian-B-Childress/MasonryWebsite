@@ -18,17 +18,23 @@ function Projects() {
               <div className="brick-card">
                 <img src={croppedBrickPath} alt="" />
                 <h2>Brick</h2>
+                <Link to="/contact?material=brick">
                 <button className="free-quote-cta" >Get Your Free Quote</button>
+                </Link>
               </div>
               <div className="block-card">
                 <img src="" alt="" />
                 <h2>Block</h2>
+                <Link to="/contact?material=block">
                  <button className="free-quote-cta">Get Your Free Quote</button>
+                </Link>
               </div>
               <div className="stone-card">
                 <img src={fireplace} alt="" />
                 <h2>Stone</h2>
+                <Link to="/contact?material=stone">
                  <button className="free-quote-cta">Get Your Free Quote</button>
+                </Link>
               </div>
             </div>
           

@@ -22,8 +22,8 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/about" className="linkTo">
-            About
+          <Link to="/gallery" className="linkTo">
+            Gallery
           </Link>
         </li>
         <li>
