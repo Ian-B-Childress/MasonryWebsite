@@ -11,14 +11,18 @@ class ContactForm extends Component {
     super(props);
 
     //parsing url parameters to prefill the form
-    
+
     const parameters = new URLSearchParams(window.location.search);
     //pulls the material from the url parameters, if it exists
     //if it does not exist, it will default to "selectJobMaterial"
-    const material = (parameters.get("material")||"selectJobMaterial").toLowerCase();
-    const allowedMaterials = ["brick","block","stone"];
+    const material = (
+      parameters.get("material") || "selectJobMaterial"
+    ).toLowerCase();
+    const allowedMaterials = ["brick", "block", "stone"];
     //if the material is not in the allowedMaterials array, it will default to "selectJobMaterial"
-    const selectedMaterial = allowedMaterials.includes(material) ? material:"selectJobMaterial";
+    const selectedMaterial = allowedMaterials.includes(material)
+      ? material
+      : "selectJobMaterial";
 
     this.state = {
       name: "",
@@ -27,6 +31,8 @@ class ContactForm extends Component {
       message: "",
       selectedMaterial: selectedMaterial, //sets the selected material to the material from the url parameters, or "selectJobMaterial" if it does not exist
       loading: false, //sets loading to false by default
+      statusMessage: "",
+      statusType: "", //'success' or 'error'
     };
 
     //handleChange updates the state each time it changes
@@ -44,7 +50,8 @@ class ContactForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.setState({ loading: true }); //set loading to true when the form is submitted
+    this.setState({ loading: true });
+    //set loading to true when the form is submitted
     console.log("Form submitted:", this.state);
 
     fetch("http://localhost:5000/contact", {
@@ -57,11 +64,20 @@ class ContactForm extends Component {
       .then((response) => response.json())
       .then((data) => {
         console.log("Success:", data);
-        this.setState({ loading: false }); //set loading to false when the form is submitted, disabling the spinner
+        this.setState({
+          loading: false,
+          statusType: "success",
+          statusMessage: "Successfully submitted, we will be in contact soon!",
+        }); //set loading to false, status type to success, and message to message when the form is submitted, disabling the spinner
       })
       .catch((error) => {
         console.error("Error:", error);
-        this.setState({ loading: false }); //set loading to false if there is an error
+        this.setState({
+          loading: false,
+          statusType: "error",
+          statusMessage:
+            "There was an issue processing your request. Try again later or reach us directly at (xxx) xxx - xxxx",
+        }); //set loading to false if there is an error, status type to error, and message to error message
       });
   }
 
@@ -76,7 +92,14 @@ class ContactForm extends Component {
             <div className="loading-container">
               <div className="loading-spinner" id="loading"></div>
             </div>
-            
+          )}
+
+          {this.state.statusMessage && (
+            <div className="status-container">
+              <div className="status-message">
+                <p>{this.state.statusMessage}</p>
+              </div>
+            </div>
           )}
 
           <form onSubmit={this.handleSubmit}>

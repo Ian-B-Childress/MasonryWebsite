@@ -381,7 +381,7 @@ img {
 /* setting up the animation for home image and header */
 @keyframes swooshIn {
   0% {
-    transform: translateX(+100%);
+    transform: translateX(0%);
     opacity: 0;
   }
   100% {
@@ -392,7 +392,7 @@ img {
 
 @keyframes swooshOut {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
     opacity: 0;
   }
   100% {
@@ -408,6 +408,7 @@ img {
 
 .h-header {
   animation: swooshOut 1.5s ease-in forwards;
+  animation-duration: 5ms;
   opacity: 0;
 }
 
