@@ -853,3 +853,21 @@ select {
   padding: 1rem 0;
   border-radius: 5px;
 }
+
+
+.t-carousel {
+  padding: 1rem 0;
+  background-color: #e5dfda;
+  border:#5f3e24 2px solid;
+  border-radius: 20px;
+  margin: 1rem 5rem;
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+   justify-content: center;
+}
+
+.swiper-wrapper {
+ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+ border-radius: 20px;
+ font-style: italic;
+ font-size: large;
+}

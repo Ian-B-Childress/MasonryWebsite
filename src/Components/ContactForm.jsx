@@ -76,7 +76,7 @@ class ContactForm extends Component {
           loading: false,
           statusType: "error",
           statusMessage:
-            "There was an issue processing your request. Try again later or reach us directly at (xxx) xxx - xxxx",
+            "There was an issue processing your request. Try again later or reach us directly at (606)213-7094",
         }); //set loading to false if there is an error, status type to error, and message to error message
       });
   }
