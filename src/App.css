@@ -871,3 +871,14 @@ select {
  font-style: italic;
  font-size: large;
 }
+
+@media  (max-width: 600px) {
+  .t-carousel{
+    margin: 1rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .services-container{
+    margin: 0rem;
+  }
+}
