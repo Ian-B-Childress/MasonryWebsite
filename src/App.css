@@ -7,9 +7,8 @@
 }
 
 :where(input, textarea, select, button) {
-  background-color: white; 
-  color: black; 
- 
+  background-color: white;
+  color: black;
 }
 
 /*remove default styles for autofill */
@@ -854,31 +853,33 @@ select {
   border-radius: 5px;
 }
 
-
 .t-carousel {
   padding: 1rem 0;
   background-color: #e5dfda;
-  border:#5f3e24 2px solid;
+  border: #5f3e24 2px solid;
   border-radius: 20px;
   margin: 1rem 5rem;
-   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-   justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  justify-content: center;
 }
 
 .swiper-wrapper {
- box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
- border-radius: 20px;
- font-style: italic;
- font-size: large;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-shadow:2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  font-style: italic;
+  font-size: large;
 }
 
-@media  (max-width: 600px) {
-  .t-carousel{
+@media (max-width: 600px) {
+  .t-carousel {
     margin: 1rem 1rem;
     margin-bottom: 2rem;
   }
 
-  .services-container{
+  .services-container {
     margin: 0rem;
   }
 }
