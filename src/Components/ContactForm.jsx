@@ -54,7 +54,7 @@ class ContactForm extends Component {
     //set loading to true when the form is submitted
     console.log("Form submitted:", this.state);
 
-    fetch("http://localhost:5000/contact", {
+    fetch("https://masonrywebsite.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
