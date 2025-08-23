@@ -52,7 +52,6 @@ class ContactForm extends Component {
     event.preventDefault();
     this.setState({ loading: true });
     //set loading to true when the form is submitted
-    console.log("Form submitted:", this.state);
 
     fetch("https://masonrywebsite.onrender.com/contact", {
       method: "POST",
@@ -62,8 +61,7 @@ class ContactForm extends Component {
       body: JSON.stringify(this.state),
     })
       .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
+      .then(() => {
         this.setState({
           loading: false,
           statusType: "success",
