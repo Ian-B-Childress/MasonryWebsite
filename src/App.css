@@ -401,13 +401,13 @@ img {
 }
 
 .home {
-  animation: swooshIn 1s ease-out forwards;
+  animation: swooshIn 0s ease-out forwards;
   opacity: 0;
 }
 
 .h-header {
   animation: swooshOut 1.5s ease-in forwards;
-  animation-duration: 5ms;
+  animation-duration: 0ms;
   opacity: 0;
 }
 

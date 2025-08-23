@@ -23,8 +23,7 @@ const transporter = nodemailer.createTransport({
 
 //in memory storage for the submissions
 const customerSubmissions = [];
-//in a real application, you would use a database
-//switch to postgresql, but atleast we know its working
+//in a big application, you would use a database
 
 app.post("/contact", async (req, res) => {
   const { name, phone, address, message } = req.body;
@@ -33,10 +32,10 @@ app.post("/contact", async (req, res) => {
   
   try {
     await transporter.sendMail({
-      from: '"Ian C" <ian.childress10@gmail.com>',
+      from: '"Elmer" <ian.childress10@gmail.com>',
       to: "ian.childress10@gmail.com",
-      subject: "New Contact Form Submission",
-      text: `You have a new contact form submission:\n\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\nMessage: ${message}`,
+      subject: "New Job Email",
+      text: `You have a new email from your website:\n\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\nMessage: ${message}`,
     });
     console.log("Notification email sent");
     res.status(200).json({ success: true, message: "Email sent!" });
