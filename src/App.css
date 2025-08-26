@@ -146,7 +146,6 @@ body {
   transition: filter 300ms;
   flex-shrink: 0;
   border-radius: 20px;
-  
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em hsla(30, 43%, 37%, 1));
@@ -847,12 +846,19 @@ select {
   margin-right: 5rem;
   padding: 2rem;
   border-radius: 20px;
+  border: solid 3px #5f3e24;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-.not-found h3 {
+.not-found button {
   background-color: #865d36;
-  padding: 1rem 0;
-  border-radius: 5px;
+  color: black;
+}
+.not-found h3 {
+  color: #000;
+}
+.not-found button:hover {
+  background-color: #5f3e24;
 }
 
 .t-carousel {
@@ -952,7 +958,75 @@ select {
   font-size: 1rem;
   line-height: 1.5;
   color: #333;
-  padding: 0 1rem;
+  padding: 1rem;
   border: #5f3e24 solid 2.5px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.policy-container {
+  display: flex;
+  justify-content: center; /* centers inner content */
+  margin: 5rem;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 3px solid #5f3e24;
+  background-color: #e5dfda;
+}
+
+/* inner wrapper to handle vertical stacking */
+.policy-content {
+  display: block;
+  max-width: 800px; /* keeps content readable */
+}
+
+.policy-container h1 {
+  text-decoration: double 2px #000 underline;
+  margin-bottom: 1rem;
+}
+
+.policy-container h2 {
+  text-decoration: solid 2px #000 underline;
+  margin-bottom: 0.5rem;
+}
+
+.policy-container p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.policy-container ul {
+  padding-left: 2rem; /* space for numbers */
+  margin-bottom: 1rem;
+  list-style: decimal outside;
+}
+
+.policy-container li {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem; /* space between list items */
+}
+
+.s {
+  background-color: #f5f2ed;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 75%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  padding: 1rem;
+  border: #5f3e24 solid 2.5px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#linkTo {
+  background-color: #865d36;
+  padding: 0.6rem;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+#linkTo:hover {
+  background-color: #5f3e24;
 }

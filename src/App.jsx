@@ -5,6 +5,8 @@ import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
 import NotFound from './pages/NotFound.jsx'
 import Gallery from './pages/Gallery.jsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
+import TermsOfService from './pages/TOS.jsx'
 import './App.css'
 import project1 from './images/project1.jpg'
 import ReactDOM from 'react-dom'
@@ -33,6 +35,8 @@ useEffect(() => {
       <Route path='/projects' element={<Projects />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='/gallery' element={<Gallery />} />
+      <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+      <Route path='/terms-of-service' element={<TermsOfService />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
       </Layout>

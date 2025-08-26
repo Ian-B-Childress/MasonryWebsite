@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
         <div className="social-media">
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/dannyntrena.melvin"
             target="_blank"
             rel="noopener noreferrer"
           >

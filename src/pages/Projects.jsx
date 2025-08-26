@@ -25,7 +25,7 @@ function Projects() {
           <Link to="/contact?material=brick">
             <button className="free-quote-cta">Get Your Free Quote</button>
           </Link>
-          <p>
+          <p className="s">
             Professional brickwork at competitive rates, expertly sealed and
             jointed to withstand harsh weather.
           </p>
@@ -36,7 +36,7 @@ function Projects() {
           <Link to="/contact?material=block">
             <button className="free-quote-cta">Get Your Free Quote</button>
           </Link>
-          <p>
+          <p className="s">
             Reliable block construction, carefully installed to provide strong,
             lasting foundations.
           </p>
@@ -47,7 +47,7 @@ function Projects() {
           <Link to="/contact?material=stone">
             <button className="free-quote-cta">Get Your Free Quote</button>
           </Link>
-          <p>
+          <p className="s">
             High-quality stone installations that combine durability with
             enduring visual appeal.
           </p>

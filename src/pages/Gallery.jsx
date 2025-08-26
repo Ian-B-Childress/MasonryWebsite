@@ -32,13 +32,13 @@ export default function Gallery() {
         <div className="gallery-container">
           <div className="gallery-step" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
             <img src={croppedBrickPath} alt="brick path" />
-            <p className="description">Brick pathway leading to backyard.</p>
+            <p className="description">A welcoming exterior pathway leading to the porch, surrounded by a garden and laid in a classic running bond pattern</p>
           </div>
         </div>
 
         <div className="gallery-container">
           <div className="gallery-step" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-            <p className="description">Cozy fireplace installation.</p>
+            <p className="description">A cozy indoor fireplace framed with neatly cut rectangular stones, creating a rustic yet refined focal point in the room.</p>
             <img src={fireplace} alt="ryan hall fireplace" />
           </div>
         </div>
@@ -46,13 +46,13 @@ export default function Gallery() {
         <div className="gallery-container">
           <div className="gallery-step" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
             <img src={cody} alt="mailbox" />
-            <p className="description">Custom mailbox build.</p>
+            <p className="description">A classic red brick mailbox topped with a sturdy stone cap, blending traditional design with durable craftsmanship.</p>
           </div>
         </div>
 
         <div className="gallery-container">
           <div className="gallery-step" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-            <p className="description">Stone placement around sand foundation.</p>
+            <p className="description">Large stone slabs carefully laid on a sand base, creating a natural and elegant poolside surface.</p>
             <img src={fox} alt="stone on sand" />
           </div>
         </div>
@@ -60,13 +60,13 @@ export default function Gallery() {
         <div className="gallery-container">
           <div className="gallery-step" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
             <img src={kini} alt="stone around building bottom" />
-            <p className="description">Stonework around building base.</p>
+            <p className="description">Neatly cut rectangular stones surrounding the base of a garage, adding a refined and durable finish to the exterior.</p>
           </div>
         </div>
 
         <div className="gallery-container">
           <div className="gallery-step" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-            <p className="description">Brick fireplace detail.</p>
+            <p className="description">A classic brick fireplace serving as a warm and inviting focal point, combining traditional design with cozy charm.</p>
             <img src={little} alt="brick fireplace" />
           </div>
         </div>
@@ -74,13 +74,13 @@ export default function Gallery() {
         <div className="gallery-container">
           <div className="gallery-step" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
             <img src={ramp} alt="brick ramp" />
-            <p className="description">Brick ramp construction.</p>
+            <p className="description">A gently sloped brick ramp providing smooth and accessible transition, blending seamlessly with the surrounding exterior.</p>
           </div>
         </div>
 
         <div className="gallery-container">
           <div className="gallery-step" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-            <p className="description">Stonework beneath window.</p>
+            <p className="description">Neatly cut rectangular stones placed beneath an exterior window, adding texture and a refined touch to the building's facade.</p>
             <img src={steph} alt="stone under window" />
           </div>
         </div>
