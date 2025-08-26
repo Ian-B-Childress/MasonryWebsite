@@ -4,6 +4,7 @@ import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
 import NotFound from './pages/NotFound.jsx'
+import Gallery from './pages/Gallery.jsx'
 import './App.css'
 import project1 from './images/project1.jpg'
 import ReactDOM from 'react-dom'
@@ -31,6 +32,7 @@ useEffect(() => {
       <Route path='/' element={<Home />} />
       <Route path='/projects' element={<Projects />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/gallery' element={<Gallery />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
       </Layout>

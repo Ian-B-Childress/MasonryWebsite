@@ -24,7 +24,7 @@ export default function HomeSectionOne() {
           </p>
 
           <div className="button-container">
-            <Link to="/projects" id="callToAction">
+            <Link to="/gallery" id="callToAction">
               <p id="ctaWork">See Work</p>
             </Link>
 

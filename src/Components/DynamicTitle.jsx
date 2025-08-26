@@ -13,8 +13,8 @@ export function DynamicTitle() {
       case '/projects':
         document.title = 'Melvin Masonry | Services';
         break;
-      case '/about':
-        document.title = 'Melvin Masonry | About';
+      case '/gallery':
+        document.title = 'Melvin Masonry | Gallery';
         break;
       case '/contact':
         document.title = 'Melvin Masonry | Contact';
