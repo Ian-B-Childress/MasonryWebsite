@@ -139,16 +139,18 @@ body {
 }
 
 .logo {
-  height: 4.5rem;
+  height: 80px;
+  width: auto;
   padding: 1rem;
   will-change: filter;
   transition: filter 300ms;
   flex-shrink: 0;
+  border-radius: 20px;
+  
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em hsla(30, 43%, 37%, 1));
 }
-
 nav {
   width: 65%;
   max-width: 65%;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-import logo from "../images/project1.jpg";
+import logo from "../images/melvinmasonrylogo.webp";
 
 const NavBar = () => {
   return (
@@ -32,6 +32,7 @@ const NavBar = () => {
           </Link>
         </li>
       </ul>
+
     </nav>
   );
 };
