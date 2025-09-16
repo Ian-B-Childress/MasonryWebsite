@@ -28,3 +28,4 @@ dist-ssr
 /masonry-backend/.env
 .env
 .env
+.vercel
