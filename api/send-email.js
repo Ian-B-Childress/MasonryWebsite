@@ -8,10 +8,6 @@ export default async function handler(req, res) {
   try {
     const { name, phone, address, message } = req.body;
 
-    console.log("Form submission received:", { name, phone, address, message });
-    console.log("EMAIL_USER is", process.env.EMAIL_USER ? "set" : "missing");
-    console.log("EMAIL_PASS is", process.env.EMAIL_PASS ? "set" : "missing");
-
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 587,
@@ -31,9 +27,9 @@ export default async function handler(req, res) {
 
     return res.status(200).json({ success: true, message: "Email sent!" });
   } catch (error) {
-    console.error("SERVER ERROR:", error);
+    console.error("Error sending email:", error);
     return res
       .status(500)
-      .json({ success: false, message: error.message || "Failed to send email." });
+      .json({ success: false, message: error.message || "Failed to send email" });
   }
 }
