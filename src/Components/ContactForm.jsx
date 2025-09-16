@@ -53,7 +53,7 @@ class ContactForm extends Component {
     this.setState({ loading: true });
     //set loading to true when the form is submitted
 
-    fetch("https://masonrywebsite.onrender.com/contact", {
+    fetch("/api/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
