@@ -5,9 +5,13 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: "Method not allowed" });
   }
 
-  const { name, phone, address, message } = req.body;
-
   try {
+    const { name, phone, address, message } = req.body;
+
+    console.log("Form submission received:", { name, phone, address, message });
+    console.log("EMAIL_USER is", process.env.EMAIL_USER ? "set" : "missing");
+    console.log("EMAIL_PASS is", process.env.EMAIL_PASS ? "set" : "missing");
+
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 587,
@@ -25,9 +29,11 @@ export default async function handler(req, res) {
       text: `You have a new email from your website:\n\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\nMessage: ${message}`,
     });
 
-    res.status(200).json({ success: true, message: "Email sent!" });
+    return res.status(200).json({ success: true, message: "Email sent!" });
   } catch (error) {
-    console.error("Error sending email:", error);
-    res.status(500).json({ success: false, message: "Failed to send email." });
+    console.error("SERVER ERROR:", error);
+    return res
+      .status(500)
+      .json({ success: false, message: error.message || "Failed to send email." });
   }
 }
